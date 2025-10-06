@@ -1,0 +1,88 @@
+As an expert annotator, please label the following video advert according to the described typology. Many adverts will not be relevant so please label them as X. We are looking for narratives specifically from the oil and gas sector.
+
+Community & Resilience
+    CA: Emphasizes how the oil and gas sector contributes to local and national economies through tax revenues, charitable efforts, and support for local businesses.
+    # Here's the annotation criteria points:
+        (General)
+            - the O&G sector or an O&G company contributing to national or local GDP.
+            - helping local communities or society through tax revenues from O&G (often stated that these are used to build schools, hospitals, roads etc.)
+            - helping local businesses (typically through indirect spending).
+        (Corresponding negative statements including that without the O&G sector/company)
+            - the economy would suffer.
+            - local communities would suffer due to the loss of tax revenue.
+            - local businesses would suffer due to the lack of indirect spending.
+        (Philanthropic efforts)
+            - the O&G sector/company is participating in voluntary efforts (non-climate related).
+            - donating money to charitable causes.
+            - donating money to fund or train first responders.
+            - donating supplies.
+        (Corresponding negative statements including that without the O&G sector/company)
+            - there would be a shortage or reduce amount of money/supplies going to charitable causes.
+
+    CB: Focuses on the creation and sustainability of jobs by the oil and gas industry.
+    # Here's the annotation criteria points:
+        (General)
+            - the O&G sector/company is providing jobs.
+            - provides jobs paying high wages.
+        (Corresponding negative statements including that without the O&G sector/company)
+            - there would be job losses.
+            - jobs would be lower paid.
+
+Green Innovation and Climate Solutions
+    GA: Highlights efforts to reduce greenhouse gas emissions through internal targets, policy support, voluntary initiatives, and emissions reduction technologies.
+    # Here's the annotation criteria points:
+        (The O&G sector/company is engaging in efforts to reduce greenhouse gas emissions)
+            - setting internal targets.
+            - supporting policy to reduce emissions.
+            - supporting or participating in voluntary initiatives to reduce emissions.
+            - supporting or developing means of emissions reduction including energy efficiency.
+            - Carbon Capture, Utilisation and Storage (CCUS).
+            - offsetting through planting trees.
+        (Corresponding negative statements)
+            - policy to reduce emissions is unnecessary or incorrect.
+
+    GC: Promotes "clean" or "green" fossil fuels as part of climate solutions.
+    # Here's the annotation criteria points:
+        (General)
+            - the O&G sector/company is developing 'clean' or 'green' fossil fuels (oil and gas).
+            - oil and/or gas is 'clean' 'green' or 'sustainable'.
+            - oil and/or gas is a partner the renewable energy.
+            - oil and/or gas is a climate solution or part of the solution to climate change.
+
+Pragmatism/Pragmatic Energy mix (Power systems and manufactured goods)
+    PA: Portrays oil and gas as essential, reliable, affordable, and safe energy sources critical for maintaining power systems.
+    # Here's the annotation criteria points:
+        (General)
+            - promoting the benefits of using oil and gas as energy sources.
+            - claiming oil and gas are reliable, affordable, safe, efficient, etc.
+            - suggesting that oil and gas are needed for the foreseeable future, that oil and gas are needed for or helps keeps the lights on, and that oil and gas powers people's lives (the implication being that it is needed for people's lives to continue as is or be powered effectively).
+        (Corresponding negative statements)
+            - without oil and gas energy would b unreliable, unaffordable, unsafe etc.
+
+    PB: Emphasizes the importance of oil and gas as raw materials for various non-power-related uses and manufactured goods.
+    # Here's the annotation criteria points:
+        (General)
+            - about alternative uses of oil and gas including to make PPE, toothbrushes etc.
+        (Corresponding negative statements)
+            - without oil and gas there wouldn't be or there would be a shortage in these goods.
+
+Patriotic Energy mix
+    SA: Stresses how domestic oil and gas production benefits the nation, including energy independence, energy leadership, and the idea of supporting American energy.
+    # Here's the annotation criteria points:
+        (General)
+            - the O&G sector/company contributes to energy independence/national security.
+        (Corresponding negative statements including that without the O&G sector/company)
+            - the energy independence would suffer.
+            - national security would suffer.
+            - the US would be reliant on foreign/unstable/hostile regimes.
+
+This task is a multi-label classification and can have up to the four labels.
+Return a JSON list with all relevant labels. For example, a label containing "CA" and "PB" should be answered ["CA", "PB"]. If there is no label to annotate, return an empty list: [].
+
+# Question and answering format
+
+Frame & transcript (if available) pairs of the video: the video frames and transcripts.
+Answer: the JSON list including annotated labels.
+
+------------------------
+

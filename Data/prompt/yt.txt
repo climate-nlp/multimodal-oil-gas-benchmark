@@ -1,0 +1,44 @@
+As an expert annotator, please annotate "narratives" of advertising videos from the oil & gas (O&G) sector companies.
+
+First, you must watch the video carefully (video frames and transcript (if available) will be given). Second, answer the labels based on the criteria if an audience will be impressed implicitly or explicitly by the video. You can select multiple labels. Video ad messages are aimed at a diverse range of people, and they usually convey a corporate impression without requiring deep thought. Therefore, when labeling, please try to consider implicit messages and follow your gut feeling after watching the video. Some labels may overlap, so please label all relevant labels.
+
+# Label definitions
+
+- "Economy and Business"
+    - Impressions the audience will have: the company or O&G contributes to the local or national economy, industry, business, and tax revenue.
+    - Example criteria to annotate: Narratives of tax income. Images of the number of investing. A testimony from local business owners. Images of industry serving a country. Images of the urban city, energy and transportation network, global connectivity map, and futuristic economy. Pictures of supply chains.
+    - The following **should not** be considered: Projects, businesses, and investments that are not directly linked to O&G. General image of workers.
+
+- "Work"
+    - Impressions the audience will have: The company’s employees are reliable. The workplace of the company is reliable. The company or O&G contributes to creating or sustaining jobs.
+    - Example criteria to annotate: An interview with an employee. Images of Employees who work and employees who smile. Footage of plants, rigs and pipelines. Narratives of the number of jobs created.
+    - The following **should not** be considered: Workers not linked to the O&G business.
+
+- "Environment"
+    - Impressions the audience will have: The company contributes to reducing GHG emissions. The company supports renewable energy. The company does good for the environment. The company uses "clean" or "sustainable" O&G.
+    - Example criteria to annotate: Narratives like "We contribute to reducing CO2 emissions." Images of renewable energies like solar panels and wind turbines. Images of the low-emission vehicles or EV.  Mountains, lakes, or any other beautiful natural images along with narratives that imply the company does good for the environment.
+    - The following **should not** be considered: General images of beautiful landscape that do not associated with environmental impressions.
+
+- "Green Innovation"
+    - Impressions the audience will have: The company is innovative or futuristic to derive green future. The company is developing new energy technologies (which will be efficient.)	A showcase of new renewable energy technology..
+    - Example criteria to annotate: Images of research lab, developing new green solutions.
+    - The following **should not** be considered: Technologies not linked to the O&G business.
+
+- "Community and Life"
+    - Impressions the audience will have: The company or O&G contributes to the community, culture, transportation, and sport. The company supports charitable efforts. The company or O&G supports our daily lives. The company or O&G supports one’s hobby.
+    - Example criteria to annotate: Images of local school and hospital. Narratives about sponsorship of a racing car. Narratives of local reforestation. Narratives for pragmatism like "O&G heats their homes". Images of a family smiling, eating, and playing.  Footage of daily life of people. Narratives of the need of oil or gas for cooking or daily plastic goods.
+
+- "Patriotism"
+    - Impressions the audience will have: The company or O&G contributes to the country. The company is a pride of our country. The production of O&G reserves benefits the country or energy independence.
+    - Example criteria to annotate: Images of national flags. Emphasize national brands, e.g., "we produce the US brand."
+
+This task is a multi-label classification and can have up to the six labels.
+Return a JSON list with all relevant labels. For example, a label containing "Economy and Business" and "Community and Life" should be answered ["Economy and Business", "Community and Life"]. If there is no label to annotate, return an empty list: [].
+
+# Question and answering format
+
+Frame & transcript (if available) pairs of the video: the video frames and transcripts.
+Answer: the JSON list including annotated labels.
+
+------------------------
+
