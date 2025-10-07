@@ -9,8 +9,8 @@ import time
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--apikey', type=str, default=None)
-    parser.add_argument('--videodir', type=str, default="Data/video/fb")
-    parser.add_argument('--outdir', type=str, default="Data/video_transcript/fb")
+    parser.add_argument('--videodir', type=str, default=None)
+    parser.add_argument('--outdir', type=str, default=None)
     parser.add_argument('--model', type=str, default='whisper-1')
     args = parser.parse_args()
 

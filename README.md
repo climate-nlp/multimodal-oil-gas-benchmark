@@ -13,9 +13,8 @@ Python 3.12
 #### Install packages:
 
 ```bash
-pip install torch==2.6.0
 pip install -r requirements.txt
-pip install vllm==0.8.3 transformers==4.51.2
+pip install torch==2.6.0 vllm==0.8.3 transformers==4.51.2
 ```
 
 
