@@ -2,9 +2,6 @@ Pipfile.lock
 
 Data/image
 Data.*/*
-Data/plain
-Data/video
-Data/random_sampled_yt_data
 *.html
 *.jpg
 
