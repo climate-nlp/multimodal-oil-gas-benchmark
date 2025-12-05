@@ -5,7 +5,7 @@ import References from './pages/References';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/multimodal-oil-gas-benchmark">
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/references" element={<References />} />
