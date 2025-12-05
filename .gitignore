@@ -147,3 +147,10 @@ ENV/
 
 ._.DS_Store
 
+
+# Dashboard
+dashboard/node_modules
+dashboard/dist
+dashboard/dist-ssr
+dashboard/.env.local
+dashboard/public/data/yt_video.all.jsonl
