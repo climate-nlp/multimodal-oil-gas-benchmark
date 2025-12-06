@@ -33,7 +33,7 @@ export const Dashboard: React.FC = () => {
         const loadData = async () => {
             try {
                 setLoading(true);
-                const stats = await loadDataset('/data/yt_video.all.jsonl');
+                const stats = await loadDataset(`${import.meta.env.BASE_URL}data/yt_video.all.jsonl`);
                 setYearlyStats(stats);
 
                 // Optional: Log for verification
